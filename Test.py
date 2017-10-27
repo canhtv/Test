@@ -18,7 +18,7 @@ data = pd.DataFrame(np.column_stack([x,y]),columns = ['x','y'])
 for i in range(2,16):
     colname = 'x_%d'%i
     data[colname] = x**i
-print data.head()
+#print data.head()
 plt.plot(data['x'],data['y'],'.')
 plt.show()
 
